@@ -2,7 +2,7 @@
 
 > Complete test automation framework with real working examples for SauceDemo, TodoMVC, and API testing
 
-[![Playwright Tests](https://github.com/YOUR_USERNAME/playwright-project-pack/actions/workflows/playwright.yml/badge.svg)](https://github.com/YOUR_USERNAME/playwright-project-pack/actions)
+[![Playwright Tests](https://github.com/aston-cook/playwright-project-pack/actions/workflows/playwright.yml/badge.svg)](https://github.com/aston-cook/playwright-project-pack/actions)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-blue.svg)](https://www.typescriptlang.org/)
 [![Playwright](https://img.shields.io/badge/Playwright-1.40-green.svg)](https://playwright.dev/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
@@ -10,7 +10,7 @@
 ## 🚀 Quick Start
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/playwright-project-pack.git
+git clone https://github.com/aston-cook/playwright-project-pack.git
 cd playwright-project-pack
 
 # Install dependencies
@@ -54,6 +54,7 @@ MIT
 ## 👤 Author
 
 **Aston Cook**
+- GitHub: [@aston-cook](https://github.com/aston-cook)
 
 ---
 
