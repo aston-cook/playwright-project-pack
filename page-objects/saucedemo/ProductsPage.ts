@@ -22,7 +22,7 @@ export class ProductsPage {
     this.inventoryItems = page.locator('.inventory_item');
     this.shoppingCartBadge = page.locator('.shopping_cart_badge');
     this.shoppingCartLink = page.locator('.shopping_cart_link');
-    this.sortDropdown = page.locator('[data-test="product_sort_container"]');
+    this.sortDropdown = page.locator('.product_sort_container');
     this.burgerMenu = page.locator('#react-burger-menu-btn');
     this.logoutLink = page.locator('#logout_sidebar_link');
   }
@@ -116,7 +116,9 @@ export class ProductsPage {
    * Sort products
    */
   async sortBy(option: 'az' | 'za' | 'lohi' | 'hilo') {
+    await this.sortDropdown.waitFor({ state: 'visible', timeout: 10000 });
     await this.sortDropdown.selectOption(option);
+    await this.page.waitForTimeout(1500);
   }
 
   /**
