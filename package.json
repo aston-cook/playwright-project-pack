@@ -1,0 +1,40 @@
+{
+  "name": "playwright-project-pack",
+  "version": "1.0.0",
+  "description": "Complete Playwright test automation framework with real working examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:ui": "playwright test --ui",
+    "test:chromium": "playwright test --project=chromium",
+    "test:firefox": "playwright test --project=firefox",
+    "test:webkit": "playwright test --project=webkit",
+    "test:saucedemo": "playwright test tests/saucedemo",
+    "test:todomvc": "playwright test tests/todomvc",
+    "test:api": "playwright test tests/api",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:e2e": "playwright test --grep @e2e",
+    "report": "playwright show-report",
+    "codegen": "playwright codegen",
+    "codegen:saucedemo": "playwright codegen https://www.saucedemo.com",
+    "codegen:todomvc": "playwright codegen https://demo.playwright.dev/todomvc"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "e2e",
+    "typescript",
+    "qa",
+    "test-automation"
+  ],
+  "author": "Aston Cook",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.10.0",
+    "dotenv": "^16.3.1"
+  }
+}
