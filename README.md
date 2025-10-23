@@ -143,39 +143,37 @@ npm run report
 
 ## 📊 Test Coverage
 
-- ✅ **88 Test Cases** across 3 browsers (264 total test runs)
-- ✅ **Login/Authentication** - ~15 tests
-  - Valid user scenarios (standard, performance, problem users)
-  - Invalid credentials and error handling
-  - Locked user scenarios
-  - Empty field validation
-- ✅ **Product Browsing & Sorting** - ~25 tests
-  - Product display and information
-  - Sorting (A-Z, Z-A, price low-high, price high-low)
-  - Add/remove products
-  - Cart badge synchronization
-- ✅ **Shopping Cart Management** - ~20 tests
-  - Add/remove single and multiple items
-  - Cart calculations and totals
-  - Cart persistence across navigation
-  - Empty cart scenarios
-- ✅ **Checkout Flow** - ~28 tests
-  - Form validation (all required fields)
-  - Order overview and calculations
-  - Order completion and confirmation
-  - Multi-item checkout flows
-  - Complete E2E purchase scenarios
-- ✅ **100% Pass Rate** - 264/264 passing
+- ✅ **123 Test Cases** across 3 browsers (369 total test runs)
+- ✅ **100% Pass Rate** - All tests passing
 - ✅ **Cross-Browser** - Chromium, Firefox, WebKit
 - ✅ **CI/CD** - Automated testing on every push
 
-### Test Execution
-- **Per Browser:** 88 tests
-- **Total Execution:** 264 tests (88 × 3 browsers)
-- **Pass Rate:** 100% (264/264)
-- **Average Duration:** ~6.9 minutes
+### Test Suites
 
----
+#### 🛒 SauceDemo E-Commerce Suite (88 tests)
+Complete end-to-end e-commerce testing:
+- Login/Authentication (~15 tests)
+- Product Browsing & Sorting (~25 tests)
+- Shopping Cart Management (~20 tests)
+- Checkout Flow (~28 tests)
+
+#### 🌐 API Testing Suite (35 tests)
+REST API validation and integration:
+- **JSONPlaceholder API** (14 tests)
+  - GET, POST, PUT, DELETE operations
+  - Users, posts, comments endpoints
+  - Response validation & performance
+- **FakeStore API** (20 tests)
+  - Products and categories
+  - Authentication with JWT tokens
+  - Cart operations (CRUD)
+  - E2E API workflows
+
+### Test Execution
+- **Per Browser:** 122 tests
+- **Total Execution:** 366 tests (123 × 3 browsers)
+- **Average Duration:** ~3 minutes
+- **CI/CD:** GitHub Actions on every push
 
 ## 🎯 Key Features
 
